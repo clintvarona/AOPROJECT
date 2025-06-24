@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.iphone-calc-container {
+  width: 320px;
+  margin: 40px auto;
+  background: #222;
+  border-radius: 36px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  padding: 24px 12px 32px 12px;
+}
+.iphone-calc-display {
+  background: #111;
+  color: #fff;
+  font-size: 2.8rem;
+  text-align: right;
+  border-radius: 16px;
+  padding: 24px 12px 12px 12px;
+  margin-bottom: 18px;
+  min-height: 48px;
+  letter-spacing: 1px;
+  overflow-x: auto;
+}
+.iphone-calc-process {
+  color: #bbb;
+  font-size: 1.1rem;
+  text-align: right;
+  min-height: 20px;
+  margin-bottom: 2px;
+  padding-right: 8px;
+  letter-spacing: 0.5px;
+  user-select: none;
+}
+.iphone-calc-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.iphone-calc-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.iphone-calc-btn {
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.iphone-calc-btn:active {
+  background: #444;
+}
+.op-btn {
+  background: #ff9500;
+  color: #fff;
+}
+.op-btn:active {
+  background: #ffa733;
+}
+.func-btn {
+  background: #a5a5a5;
+  color: #222;
+}
+.func-btn:active {
+  background: #cfcfcf;
+}
+.zero-btn {
+  grid-column: span 2 !important;
+  border-radius: 32px;
+  width: 132px !important;
+  justify-self: start;
+}
+.quadratic-toggle-btn {
+  border-radius: 16px;
+  padding: 0 18px;
+  min-width: 120px;
+  height: 40px;
+  font-size: 1.1rem;
+  border: none;
+  color: #fff;
+  background: #ff9500;
+  transition: background 0.2s;
+  margin-bottom: 16px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.quadratic-toggle-btn.quadratic-mode {
+  background: #222;
+  color: #fff;
+  border: 1.5px solid #ff9500;
+}
